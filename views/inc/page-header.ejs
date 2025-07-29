@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<%- include("head") -%>
+
+<body>
+    
+    <div class="gtco-loader"></div>
+    
+    <div id="page">
+        
+        <%- include("header-menu") -%>
+
+        <% if (isHome) { %>
+            <%- include("header-index") -%>
+        <% } else { %>
+            <%- include("header") -%>
+        <% } %>
